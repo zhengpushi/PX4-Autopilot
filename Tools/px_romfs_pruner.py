@@ -88,7 +88,7 @@ def main():
             # read file line by line
             pruned_content = ""
             board_excluded = False
-            with open(file_path, "rU") as f:
+            with open(file_path, "r") as f:
                 for line in f:
                     if re.search(r'\b{0} exclude\b'.format(args.board),line):
                         board_excluded = True;
