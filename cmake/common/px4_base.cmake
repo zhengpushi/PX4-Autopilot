@@ -356,6 +356,18 @@ function(px4_add_common_flags)
 		-Wno-implicit-fallthrough # set appropriate level and update
 
 		-Wno-unused-parameter
+
+		# by ZhengPu Shi
+		-Wno-error=cast-function-type
+		-Wno-error=address-of-packed-member
+		-Wno-error=ignored-qualifiers
+		-Wno-error=deprecated-copy
+		-Wno-error=stringop-truncation
+		-Wno-error=logical-op
+		-Wno-error=class-memaccess
+		-Wno-error=stringop-overflow
+		-Wno-error=array-bounds
+		-Wno-error=format-truncation
 		)
 
 	if (${CMAKE_C_COMPILER_ID} MATCHES ".*Clang.*")
