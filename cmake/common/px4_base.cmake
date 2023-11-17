@@ -368,6 +368,7 @@ function(px4_add_common_flags)
 		-Wno-error=stringop-overflow
 		-Wno-error=array-bounds
 		-Wno-error=format-truncation
+		-Wno-error=format-overflow
 		)
 
 	if (${CMAKE_C_COMPILER_ID} MATCHES ".*Clang.*")
